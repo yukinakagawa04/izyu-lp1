@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>すみ・はたらくTOP</title>
 </head>
+
 <body>
     <div>
         <!-- ヘッダー固定 -->
-        サービスロゴ 
-        会員登録はこちら
-         移住相談はこちら
-         お仕事相談はこちら
-
+        <div class="container">
+            <div>
+                <img src="img/original.jpg" style="height: 100px;">
+            </div>
+            <div class="container1">
+                <p>会員登録はこちら</p>
+                <button>移住相談はこちら</button>
+                <button>お仕事相談はこちら</button>
+            </div>
+        </div>
 
 
         <!-- TOP画像 -->
-         すみ
-            移住をもっとカジュアルに
+        <div>
+            <img src="img/key.png" class="key">
+        </div>
 
-        はたらく
-            住みたい街にいながら自分のスキルを活かせる仕事を
-        
-        
+
         <!-- サービスについて -->
-         移住をもっとカジュアルに。
-         ～マイナビがあなたをサポートします～
-         「自分にあう移住先と同時に職探しも検討したい」という悩みを解決するために考案された同サービス。気になる自治体とメッセージで繋がったり、全国の自治体が行う移住相談会へ手軽にオンラインで参加することが出来ます。また移住先検討と同時にマイナビが保有する副業・フリーランス・リモートワーク・転職など豊富なシゴトも検討でき、プロによるシゴト相談もお申込み可能です。理想の街と出会い「すみ・はたらく」ことを実現できる総合サービスです。
+        <div>
+            <div class="about">
+                <h1>移住をもっとカジュアルに。</h1>
+                <h2>～マイナビがあなたをサポートします～</h2>
+            </div>
+            <div class=" about1">
+                <p>「自分にあう移住先と同時に職探しも検討したい」という悩みを解決するために考案された同サービス。<br>
+                    気になる自治体とメッセージで繋がったり、全国の自治体が行う移住相談会へ手軽にオンラインで参加することが出来ます。<br>
+                    また移住先検討と同時にマイナビが保有する副業・フリーランス・リモートワーク・転職など豊富なシゴトも検討でき、プロによるシゴト相談もお申込み可能です。<br>
+                    理想の街と出会い「すみ・はたらく」ことを実現できる総合サービスです。
+                </p>
+                <img src="img/woman.png" style="height: 250px; width: 250px;  border-radius: 15px; object-fit: cover;">
+            </div>
+        </div>
 
-         <!-- サービスの特徴 -->
-          こんなことで困ったことはありませんか？
-          
-          移住には興味はあるけど、自治体のHPに行かないと情報がわからない。HPによって書かれている情報がばらばら
-          気になる自治体は見つけたけど、軽く相談したいだけで移住の相談をするまではハードルが高い。（時間もない、対面でしか相談してもらえない...）
-          移住先は決めたけど仕事も一緒に考えないと...。
+        <!-- サービスの特徴 -->
+        <div>
+            <div class="recom">
+                <h1>こんな人におすすめ</h1>
+            </div>
+            <div>
+                <div class="about1">
+                    <img src="img/heart.png"
+                        style="height: 250px; width: 250px;  border-radius: 15px; object-fit: cover;">
 
-          すみ・はたらくなら
-        01
-          全国の市区町村単位の自治体を検索、情報収集、補助金などの支援制度の比較検討ができます。（※一部地域に限られます）
+                    <div class="recom2">
+                        <div class="left-align-container">
+                            <div class="recom1">
+                                <img src="img/check.png" alt="チェック" class="check-img">
+                                <p class="check-text">気軽に移住相談したい</p>
+                            </div>
+                            <div class="recom1">
+                                <img src="img/check.png" alt="チェック" class="check-img">
+                                <p class="check-text">気になる地域を比べて考えたい</p>
+                            </div>
+                            <div class="recom1">
+                                <img src="img/check.png" alt="チェック" class="check-img">
+                                <p class="check-text">移住のために仕事を変えたい</p>
+                            </div>
+                            <div class="recom1">
+                                <img src="img/check.png" alt="チェック" class="check-img">
+                                <p class="check-text">リモート求人を探したい</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        02
-        気になる市区町村の移住担当者と気軽にオンラインで相談できます。面倒な手続きは一切不要、サイト内で興味のある自治体に都合に合わせてオンライン相談が可能です。（アプリダウンロード不要）
+        <!-- すみ・はたらくなら -->
+        <h1 class="solu">すみ・はたらくなら</h1>
 
-        03
-        専門コンサルタントと仕事に関する相談ができます。自分のスキルに合った、副業、フリーランス、リモートワークでのお仕事を紹介します。
+        <div class="card-container">
+            <div class="card">
+                <div class="card-number">01</div>
+                <img src="img/city.png" alt="">
+                <p>全国の市区町村単位の自治体を検索、情報収集、補助金などの支援制度を比べて検討ができます。（※一部地域に限られます）</p>
+            </div>
+            <div class="card">
+                <div class="card-number">02</div>
+                <img src="img/online.png" alt="">
+                <p>気になる市区町村の移住担当者と気軽にオンラインで相談できます。面倒な手続きは一切不要、サイト内で興味のある自治体に都合に合わせてオンライン相談が可能です。（アプリダウンロード不要）</p>
+            </div>
+            <div class="card">
+                <div class="card-number">03</div>
+                <img src="img/job.png" alt="">
+                <p>専門コンサルタントと仕事に関する相談ができます。自分のスキルに合った、副業、フリーランス、リモートワークでのお仕事を紹介します。</p>
+            </div>
+        </div>
+
+
 
         <!-- 利用の流れ -->
 
         あなたはどちらから移住しますか？
+
         まずは自分にあった住みたい街を探す
         関心がある街の特徴を入力する
         おすすめの町の情報を受け取る
@@ -64,14 +126,15 @@
 
         <!-- 注意事項 -->
         ・会員登録時にご希望の移住先の情報や、現在のお仕事内容をご入力ください。
-        ・ご入力内容によってはすぐにご回答できない場合、ご回答が難しい場合などもございますので、ご了承ください。 
+        ・ご入力内容によってはすぐにご回答できない場合、ご回答が難しい場合などもございますので、ご了承ください。
         本件は、株式会社マイナビの新規事業提案制度を通じて企画・立案されたもので、現在は概念検証の段階にあります。実際のサービスのリリースについては検証結果のもと、今後判断されるものであり、現時点でサービスが提供されることはありません。予めご了承ください。
 
 
         <!-- ふったー -->
         Copyright © Mynavi Corporation
-        
+
     </div>
-    
+
 </body>
+
 </html>

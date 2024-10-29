@@ -1,0 +1,134 @@
+/* スマホサイズのスタイル */
+/* @media (max-width: 600px) { */
+    body {
+        /* スマホ用のスタイルをここに書く */
+        background-color: #f0f0f0; /* 例として背景色を変える */
+        justify-content: center;
+        
+        align-items: center;
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container img {
+        margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
+        justify-content: space-between;
+    }
+    
+    .container1 {
+        text-align: center;
+    }
+
+    .key {
+
+        align-items: center; /* 縦方向の中央揃え */
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .key img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .about1 p {
+        width: 400px;
+        margin-right: 50px;
+    }
+
+    .recom {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .left-align-container {
+        text-align: left;
+        margin: 0 auto; /* 中央寄せのためのマージン */
+        width: fit-content; /* コンテンツの幅に合わせる */
+        margin-left: 50px;
+    }
+    
+
+
+    .recom1 {
+        display: flex;
+        align-items: center; 
+        margin-bottom: 10px; 
+
+    }
+
+    .recom2 {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .check-img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .solu {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+    .card-container {
+        width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .card-number {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .card p {
+        font-size: 14px;
+        color: #333;
+    }
+    
+
+/* } */
