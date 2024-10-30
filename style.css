@@ -1,134 +1,294 @@
 /* スマホサイズのスタイル */
 /* @media (max-width: 600px) { */
-    body {
-        /* スマホ用のスタイルをここに書く */
-        background-color: #f0f0f0; /* 例として背景色を変える */
-        justify-content: center;
-        
-        align-items: center;
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
+body {
+    /* スマホ用のスタイルをここに書く */
+    background-color: #f0f0f0;
+    /* 例として背景色を変える */
+    justify-content: center;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-    }
-    .container img {
-        margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
-        justify-content: space-between;
-    }
-    
-    .container1 {
-        text-align: center;
-    }
+    align-items: center;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-    .key {
+.container {
+    position: fixed; /* 固定する */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 背景色を白に */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影をつける */
+    z-index: 1000; /* 他の要素より前に表示 */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
 
-        align-items: center; /* 縦方向の中央揃え */
-        max-width: 100%;
-        overflow: hidden;
-    }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px; /* 角丸にする */
+    color: #fff; /* テキストの色を白に */
+    text-align: center;
+    text-decoration: none; /* 下線を消す */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-    .key img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+.button-move {
+    background-color: #edb200; /* 移住相談の色 */
+}
 
-    .about {
-        text-align: center;
-        margin-top: 50px;
-    }
+.button-job {
+    background-color: #202f55; /* お仕事相談の色 */
+}
 
-    .about1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
+.container img {
+    margin-right: 20px;
+    /* 画像とテキストの間にスペースを追加 */
+    justify-content: space-between;
+}
 
-    .about1 p {
-        width: 400px;
-        margin-right: 50px;
-    }
+.container1 {
+    text-align: center;
+}
 
-    .recom {
-        margin-top: 50px;
-        text-align: center;
-    }
+.key {
 
-    .left-align-container {
-        text-align: left;
-        margin: 0 auto; /* 中央寄せのためのマージン */
-        width: fit-content; /* コンテンツの幅に合わせる */
-        margin-left: 50px;
-    }
-    
+    align-items: center;
+    /* 縦方向の中央揃え */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.key img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about1 p {
+    width: 400px;
+    margin-right: 50px;
+}
+
+.recom {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.left-align-container {
+    text-align: left;
+    margin: 0 auto;
+    /* 中央寄せのためのマージン */
+    width: fit-content;
+    /* コンテンツの幅に合わせる */
+    margin-left: 50px;
+}
 
 
-    .recom1 {
-        display: flex;
-        align-items: center; 
-        margin-bottom: 10px; 
 
-    }
+.recom1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 
-    .recom2 {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
+}
 
-    .check-img {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
+.recom2 {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
 
-    .solu {
-        margin-top: 50px;
-        text-align: center;
-    }
+.check-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.solu {
+    margin-top: 50px;
+    text-align: center;
+}
 
 
-    .card-container {
-        width: 1200px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-    
-    .card {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 300px;
-        text-align: center;
-    }
-    
-    .card img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-    
-    .card-number {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    
-    .card p {
-        font-size: 14px;
-        color: #333;
-    }
-    
+.card-container {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.solu-container {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.solu-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+
+}
+
+.solu-item {
+    width: 400px;
+    /* 各要素の幅を500pxに変更 */
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* ホバー時のアニメーションを追加 */
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #edb200;
+    /* 外側に枠線を追加 */
+}
+
+.solu-item:hover {
+    transform: scale(1.05);
+    /* ホバー時に少し拡大 */
+}
+
+.solu-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #edb200;
+    margin: 10px auto;
+}
+
+.step:last-child .arrow {
+    display: none;
+    /* 最後のステップには矢印を表示しない */
+}
+
+.menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    color: #edb200;
+}
+
+.notice {
+    background-color: #fff8e1;
+    border: 1px solid #edb200;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* autoに変更して中央寄せ */
+    text-align: left;
+    width: 960px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.notice h3 {
+    font-size: 20px;
+    color: #edb200;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.notice ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.notice ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.notice p {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    /* フッターの角を丸める */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
 
 /* } */

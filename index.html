@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"  rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/original.jpg" type="image/png">
     <title>すみ・はたらくTOP</title>
 </head>
 
@@ -17,12 +17,12 @@
         <!-- ヘッダー固定 -->
         <div class="container">
             <div>
-                <img src="img/original.jpg" style="height: 100px;">
+                <img src="img/original.jpg" style="height: 120px;">
             </div>
             <div class="container1">
                 <p>会員登録はこちら</p>
-                <button>移住相談はこちら</button>
-                <button>お仕事相談はこちら</button>
+                <a href="https://survey.mynavi.jp/cre/Enquete/Question?enq=qjD8pMbTRAE%3D&sessionsubkey=062bf72c1ff4584731dc064423f63443" class="button button-move" target="_blank" >移住相談はこちら</a>
+                <a href="https://survey.mynavi.jp/cre/Enquete/Question?enq=mtio8xr7L3E%3D&sessionsubkey=c9deca4a69fa9d18596dcf41cb76620b" class="button button-job" target="_blank" >お仕事相談はこちら</a>
             </div>
         </div>
 
@@ -108,30 +108,70 @@
 
         <!-- 利用の流れ -->
 
-        あなたはどちらから移住しますか？
+        <div class="solu-container">
+            <h1 class="solu">あなたはどっち派？</h1>
+            <div class="solu-content">
+                <div class="solu-item">
+                    <h2>住みたい街をお探しの方</h2>
+                    <div><img src="img/city.png" alt=""></div>
+                    <a href="https://survey.mynavi.jp/cre/Enquete/Question?enq=qjD8pMbTRAE%3D&sessionsubkey=062bf72c1ff4584731dc064423f63443" class="button button-move" target="_blank" >移住相談はこちら</a>
+                    <div class="menu-title">～サービスの流れ～</div>
+                    <div class="step">
+                        <p>まずは自分にあった住みたい街を探す</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="step">
+                        <p>関心がある街の特徴を入力する</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="step">
+                        <p>おすすめの町の情報を受け取る</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="step">
+                        <p>興味のある街の移住相談へ進む</p>
+                    </div>
+                </div>
+                <div class="solu-item">
+                    <h2>お仕事をお探しの方</h2>
+                    <div><img src="img/job.png" alt=""></div>
+                    <a href="https://survey.mynavi.jp/cre/Enquete/Question?enq=mtio8xr7L3E%3D&sessionsubkey=c9deca4a69fa9d18596dcf41cb76620b" class="button button-job" target="_blank" >お仕事相談はこちら</a>
+                    <div class="menu-title">～サービスの流れ～</div>
+                    <div class="step">
+                        <p>現在のお仕事情報や基本条件を入力する</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="step">
+                        <p>働き方に応じた仕事情報を受け取る</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="step">
+                        <p>お仕事相談へと進む</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        まずは自分にあった住みたい街を探す
-        関心がある街の特徴を入力する
-        おすすめの町の情報を受け取る
-        興味のある街の移住相談へ進む
 
-        現在のお仕事情報や気本条件を入力する
-        働き方に応じた仕事情報を受け取る
-        お仕事相談へと進む
 
-        <!-- 会員登録 -->
-        会員登録はこちら
-        住みたい街をお探しの方
-        お仕事をお探しの方
+
 
         <!-- 注意事項 -->
-        ・会員登録時にご希望の移住先の情報や、現在のお仕事内容をご入力ください。
-        ・ご入力内容によってはすぐにご回答できない場合、ご回答が難しい場合などもございますので、ご了承ください。
-        本件は、株式会社マイナビの新規事業提案制度を通じて企画・立案されたもので、現在は概念検証の段階にあります。実際のサービスのリリースについては検証結果のもと、今後判断されるものであり、現時点でサービスが提供されることはありません。予めご了承ください。
+        <!-- 注意事項 -->
+        <div class="notice">
+            <h3>【注意事項】</h3>
+            <ul>
+                <li>会員登録時にご希望の移住先の情報や、現在のお仕事内容をご入力ください。</li>
+                <li>ご入力内容によってはすぐにご回答できない場合、ご回答が難しい場合などもございますので、ご了承ください。</li>
+            </ul>
+            <p>本件は、株式会社マイナビの新規事業提案制度を通じて企画・立案されたもので、現在は概念検証の段階にあります。実際のサービスのリリースについては検証結果のもと、今後判断されるものであり、現時点でサービスが提供されることはありません。予めご了承ください。
+            </p>
+        </div>
 
-
-        <!-- ふったー -->
-        Copyright © Mynavi Corporation
+        <!-- フッター -->
+        <footer class="footer">
+            <p>Copyright © Mynavi Corporation</p>
+        </footer>
 
     </div>
 
